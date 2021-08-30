@@ -1,0 +1,39 @@
+[EKS Cluster (API)]
+- cluster_failed_node_count
+All > ContainerInsights > ClusterName > cluster_failed_node_count
+- cluster_node_count
+All > ContainerInsights > ClusterName > cluster_node_count
+
+[EKS Worker Node (API)]
+All > ContainerInsights > ClusterName, InstanceId, NodeName > node_cpu_utilization
+- node_cpu_utilization
+All > ContainerInsights > ClusterName, InstanceId, NodeName > node_memory_utilization
+- node_memory_utilization
+All > ContainerInsights > ClusterName, InstanceId, NodeName > node_filesystem_utilization
+- node_filesystem_utilization
+
+[Elastisearch Cluster]
+- ClusterStatus.red
+ES > Per-Domain, Per-Client Metrics > ClusterStatus.red
+- ClusterIndexWritesBlocked
+ES > Per-Domain, Per-Client Metrics > ClusterIndexWritesBlocked
+- Nodes
+ES > Per-Domain, Per-Client Metrics > Nodes
+- FreeStorageSpace
+ES > Per-Domain, Per-Client Metrics > FreeStorageSpace
+- CPUUtilization
+ES > Per-Domain, Per-Client Metrics > CPUUtilization
+- JVMMemoryPressure
+ES > Per-Domain, Per-Client Metrics > JVMMemoryPressure
+- WarmJVMMemoryPressure(본 프로젝트에 없음)
+ES > Per-Domain, Per-Client Metrics >(본 프로젝트에 없음)
+- AutomatedSnapshotFailure
+ES > Per-Domain, Per-Client Metrics > AutomatedSnapshotFailure
+- KibanaHealthyNodes
+ES > Per-Domain, Per-Client Metrics > KibanaHealthyNodes
+
+
+
+
+
+

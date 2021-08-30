@@ -1,0 +1,21 @@
+{
+    "MetricDataQueries": [
+        {
+            "Id": "myRequest",
+            "MetricStat": {
+                "Metric": {
+                    "Namespace": "ContainerInsights",
+                    "MetricName": "cluster_failed_node_count",
+                    "Dimensions": [
+                        {
+                            "Name": "ClusterName",
+                            "Value": "eksworkshop-eksctl"
+                        }
+                    ]
+                },
+                "Period": 60,
+                "Stat": "Maximum"
+            }
+        }
+    ]
+}

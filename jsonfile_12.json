@@ -1,0 +1,29 @@
+{
+    "MetricDataQueries": [
+        {
+            "Id": "myRequest",
+            "MetricStat": {
+                "Metric": {
+                    "Namespace": "ContainerInsights",
+                    "MetricName": "node_memory_utilization",
+                    "Dimensions": [
+                        {
+                            "Name": "ClusterName",
+                            "Value": "eksworkshop-eksctl"
+                        },
+                        {
+                            "Name": "InstanceId",
+                            "Value": "i-0f48cea1bb95232a1"
+                        },
+                        {
+                            "Name": "NodeName",
+                            "Value": "ip-192-168-43-132.ap-northeast-2.compute.internal"
+                        }
+                    ]
+                },
+                "Period": 300,
+                "Stat": "Average"
+            }
+        }
+    ]
+}

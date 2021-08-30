@@ -1,0 +1,26 @@
+{
+    "MetricDataQueries": [
+        {
+            "Id": "myRequest",
+            "MetricStat": {
+                "Metric": {
+                    "Namespace": "AWS/ES",
+                    "MetricName": "KibanaHealthyNodes",
+                    "Dimensions": [
+                        {
+                            "Name": "DomainName",
+                            "Value": "kg-datalake-elastics"
+                        },
+                        {
+                            "Name": "ClientId",
+                            "Value": "961770019511"
+                        }
+                        
+                    ]
+                },
+                "Period": 300,
+                "Stat": "Average"
+            }
+        }
+    ]
+}
