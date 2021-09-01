@@ -1,39 +1,59 @@
 [EKS Cluster (API)]
 - cluster_failed_node_count
 All > ContainerInsights > ClusterName > cluster_failed_node_count
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_01.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:59:00Z
+
 - cluster_node_count
 All > ContainerInsights > ClusterName > cluster_node_count
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_02.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:59:00Z
+
 
 [EKS Worker Node (API)]
-All > ContainerInsights > ClusterName, InstanceId, NodeName > node_cpu_utilization
 - node_cpu_utilization
-All > ContainerInsights > ClusterName, InstanceId, NodeName > node_memory_utilization
+All > ContainerInsights > ClusterName, InstanceId, NodeName > node_cpu_utilization
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_11.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
 - node_memory_utilization
-All > ContainerInsights > ClusterName, InstanceId, NodeName > node_filesystem_utilization
+All > ContainerInsights > ClusterName, InstanceId, NodeName > node_memory_utilization
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_12.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
 - node_filesystem_utilization
+All > ContainerInsights > ClusterName, InstanceId, NodeName > node_filesystem_utilization
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_13.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
 
 [Elastisearch Cluster]
 - ClusterStatus.red
 ES > Per-Domain, Per-Client Metrics > ClusterStatus.red
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_21.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
 - ClusterIndexWritesBlocked
 ES > Per-Domain, Per-Client Metrics > ClusterIndexWritesBlocked
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_22.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
 - Nodes
 ES > Per-Domain, Per-Client Metrics > Nodes
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_23.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
 - FreeStorageSpace
 ES > Per-Domain, Per-Client Metrics > FreeStorageSpace
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_24.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
 - CPUUtilization
 ES > Per-Domain, Per-Client Metrics > CPUUtilization
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_25.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
 - JVMMemoryPressure
 ES > Per-Domain, Per-Client Metrics > JVMMemoryPressure
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_26.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
 - WarmJVMMemoryPressure(본 프로젝트에 없음)
 ES > Per-Domain, Per-Client Metrics >(본 프로젝트에 없음)
+
 - AutomatedSnapshotFailure
 ES > Per-Domain, Per-Client Metrics > AutomatedSnapshotFailure
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_28.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
+
+
 - KibanaHealthyNodes
 ES > Per-Domain, Per-Client Metrics > KibanaHealthyNodes
-
-
-
-
-
-
+aws cloudwatch get-metric-data --cli-input-json  file://jsonfile_29.json --start-time 2021-08-30T00:00:00Z --end-time 2021-08-30T23:15:00Z
